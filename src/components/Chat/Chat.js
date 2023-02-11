@@ -17,7 +17,7 @@ const Chat = () => {
   let [messages,setMessages] = useState([]);
 
   ({name,room} = useParams());
-  const ENDPOINT = 'localhost:5000';
+  const ENDPOINT = 'https://chatapp-server-fw4n.onrender.com';
 
   useEffect(()=>{
     socket=io(ENDPOINT);
